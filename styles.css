@@ -1,0 +1,71 @@
+#myDIV {
+    border: 1px solid black;
+    width: 99vw;
+    height: 99vh;
+    overflow: scroll;
+}
+
+#box {
+    height: 195vh;
+    width: 195vw;
+    background-color: blanchedalmond;
+}
+
+#red-box {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.alien {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+}
+
+#laser {
+    background: purple;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    transition: all .9s ease;
+}
+
+#score {
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#explosion {
+    position: absolute;
+    background: url('./assets/Explos.png')left center;
+    width: 100px;
+    height: 60px;
+    background-size: cover;
+    animation: play 0.8s steps(10) infinite;
+}
+
+@keyframes play {
+    100% {
+        background-position: -1000px;
+    }
+}
